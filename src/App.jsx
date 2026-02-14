@@ -1,12 +1,13 @@
 import React from 'react'
+import { Header } from './components/Header/Header'
+
+
 
 export const App = () => {
   return (
-    <div>
-      <h1>wellcome</h1>
-      <p>wellcome back Nethmal</p>
-    </div>
-
+   <div className='App'>
+    <Header/>
+   </div>
 
   )
 }
