@@ -5,6 +5,7 @@ import "./App.css"
 import { Companies } from './components/Companies/Companies'
 import { Residencies } from './components/Residencies/Residencies'
 import { Value } from './components/Value/Value'
+import { Contact } from './components/Contact/Contact'
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
     <Companies/>
     <Residencies/>
     <Value/>
+    <Contact/>
    </div>
   )
 }
