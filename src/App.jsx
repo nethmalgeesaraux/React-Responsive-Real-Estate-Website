@@ -4,6 +4,7 @@ import { Hero } from './components/Hero/Hero'
 import "./App.css"
 import { Companies } from './components/Companies/Companies'
 import { Residencies } from './components/Residencies/Residencies'
+import { Value } from './components/Value/Value'
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
     </div>
     <Companies/>
     <Residencies/>
+    <Value/>
    </div>
   )
 }
