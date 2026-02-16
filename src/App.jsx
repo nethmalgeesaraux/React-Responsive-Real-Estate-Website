@@ -6,6 +6,7 @@ import { Companies } from './components/Companies/Companies'
 import { Residencies } from './components/Residencies/Residencies'
 import { Value } from './components/Value/Value'
 import { Contact } from './components/Contact/Contact'
+import { Getstart } from './components/GetStart/Getstart'
 
 export const App = () => {
   return (
@@ -19,6 +20,7 @@ export const App = () => {
     <Residencies/>
     <Value/>
     <Contact/>
+    <Getstart/>
    </div>
   )
 }
