@@ -1,6 +1,6 @@
 .f-wrapper {
   width: 100%;
-  background:white; 
+  background: white; 
   padding: 2rem 0;
   border: #535151;
 }
@@ -14,7 +14,6 @@
 }
 
 .f-left,
-
 .f-right {
   display: flex;
   flex-direction: column;
@@ -49,11 +48,21 @@
   color: #ffdd57; 
 }
 
-
+/* Responsive Fixes */
 @media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f-left,
   .f-right {
     align-items: center;
     text-align: center;
   }
 
+  .f-menu {
+    justify-content: center;
+  }
 }

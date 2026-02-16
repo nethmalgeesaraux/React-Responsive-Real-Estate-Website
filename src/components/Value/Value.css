@@ -57,3 +57,34 @@
   box-shadow: var(--shadow);
   border-radius: 6px;
 }
+
+@media (max-width: 1024px) {
+  .v-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordionButton .primaryText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .c-container {
+    flex-direction: column;
+  }
+  .c-right {
+    justify-content: center;
+  }
+  .contactModes {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mode {
+    width: 100%;
+  }
+}

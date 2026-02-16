@@ -88,3 +88,17 @@
   transform: scale(1.05);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 640px) {
+  .r-head {
+    align-items: center;
+  }
+  .r-button{
+    position: initial;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+
