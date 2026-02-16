@@ -1,12 +1,13 @@
 import React from 'react'
+import "./App.css"
 import { Header } from './components/Header/Header'
 import { Hero } from './components/Hero/Hero'
-import "./App.css"
 import { Companies } from './components/Companies/Companies'
 import { Residencies } from './components/Residencies/Residencies'
 import { Value } from './components/Value/Value'
 import { Contact } from './components/Contact/Contact'
 import { Getstart } from './components/GetStart/Getstart'
+import { Footer } from './components/Footer/Footer'
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
     <Value/>
     <Contact/>
     <Getstart/>
+    <Footer/>
    </div>
   )
 }

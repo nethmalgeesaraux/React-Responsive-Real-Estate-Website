@@ -1,0 +1,59 @@
+.f-wrapper {
+  width: 100%;
+  background:white; 
+  padding: 2rem 0;
+  border: #535151;
+}
+
+.f-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.f-left,
+
+.f-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.f-right .primaryText {
+  color: #4161df;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.f-right .secondaryText {
+  color: rgba(32, 31, 31, 0.7);
+  font-size: 0.95rem;
+}
+
+.f-menu {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.f-menu span {
+  color: #000; 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.f-menu span:hover {
+  color: #ffdd57; 
+}
+
+
+@media (max-width: 768px) {
+  .f-right {
+    align-items: center;
+    text-align: center;
+  }
+
+}
