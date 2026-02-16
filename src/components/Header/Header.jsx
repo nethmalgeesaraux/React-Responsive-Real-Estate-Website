@@ -3,6 +3,12 @@ import './Header.css'
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from "react-outside-click-handler";
 
+const navItems = [
+    { label: "Residencies", href: "#residencies" },
+    { label: "Our Value", href: "#value" },
+    { label: "Contact Us", href: "#contact" },
+    { label: "Get Started", href: "#get-started" },
+];
 
 export const Header = () => {
     const [menu, setMenu] = React.useState(false);
@@ -25,18 +31,18 @@ export const Header = () => {
                     }}
                 >
 
-                    <div className="flexCenter h-menu"
+                    <nav className="flexCenter h-menu"
                         style={getMenuStyles(menu)}>
-
-                        <a href="">Residencies</a>
-                        <a href="">Our Value</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Get Started</a>
+                        {navItems.map((item) => (
+                            <a key={item.label} href={item.href} onClick={() => setMenu(false)}>
+                                {item.label}
+                            </a>
+                        ))}
                         <button className="button">
-                            <a href="">Contact</a>
+                            <a href="#contact" onClick={() => setMenu(false)}>Contact</a>
                         </button>
-                    </div>
-                     </OutsideClickHandler>
+                    </nav>
+                </OutsideClickHandler>
                     <div className="menu-icon" onClick={() => setMenu((prev) => !prev)}>
                         <BiMenuAltRight size={30} />
                     </div>
